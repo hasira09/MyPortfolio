@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio - Hasira</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <main class="main">
+            <nav class="navBar">
+                <h1>Hasira Koswatta Portfolio</h1>
+                <div class="navigationMenu">
+                    <a href="#aboutMe"><b>ABOUT</b></a>
+                    <a href="#skills"><b>SKILLS</b></a>
+                    <a href="#projects"><b>PROJETCS</b></a>
+                    <a href="#samples"><b>SAMPLES</b></a>
+                    <a href="#contactForm"><b>LET'S CONNECT</b></a>
+                </div>
+            </nav>
+            <section class="heroSection">
+                <img class="profileImage" src="https://us.123rf.com/450wm/kritchanut/kritchanut1401/kritchanut140100054/25251050-businessman-avatar-profile-picture.jpg?ver=6">
+                <div class="herosectionDetails">
+                    <h1>Hasira Koswatta</h1>
+                    <h3>Freelancing Graphic Designer</h3>
+                </div>
+            </section>
+            <section class="aboutMe" id="aboutMe">
+                <h1>Who is Hasira?</h1>
+                <p> Hasira Is a Freelancer Capable of Graphic Designing. Through the Experience Gained from School Days I'm Countinuing My Good Work. Through Customer Satisfaction I'm Trying to Remain Stable in This Field</p>
+            </section>
+            <section class="skillsAndProjects">
+                <div class="skills" id="skills">
+                    <h1 class="cardHeading">SKILLS</h1>
+                    <img title="PS" src="./images/PS.svg">
+                    <img title="XD" src="./images/XD.svg">
+                    <img title="Canva" src="./images/Canva.svg">
+                    <img title="Prezi" src="./images/Prezi.svg">
+                    <img title="MS Powerpoint" src="./images/PPT.svg">
+                </div>
+                <div class="projects" id="projects">
+                    <h1 class="cardHeading">PROJECTS</h1>
+                    <div class="projectContainer">
+                        <img src="./images/Prezi.svg"/>
+                        <div class="projectDescription">
+                            <h4>Healthy LifeStyle</h4>
+                            <p>This is a Project Done to Present the Importance of Leading a Healthy Life Style</p>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <img src="./images/PS.svg"/>
+                        <div class="projectDescription">
+                            <h4>Webinar - World Youth Day</h4>
+                            <p>This is a Photoshop Project Done for the World Youth Day With the Collaboration of my University</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="samples" id="samples">
+              <h1> Samples </h1> </br>
+              <div class="photo">
+                <img src="./images/SAM.svg" width="1120px" height="750px">
+              </div>
+            </section>
+            <section class="contactForm" id="contactForm">
+                <h1> Connect With Hasira!</h1> </br>
+                <div class="formGroup">
+                    <label for="email">Enter Full Name</label><br/>
+                    <input type="text" id="fname" placeholder="Full Name"/>
+                </div>
+                <div class="formGroup">
+                    <label for="email">E-mail</label><br/>
+                    <input type="text" id="email" placeholder="E-mail"/>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Your Message</label><br/>
+                    <textarea placeholder="Type Your Message!" id="message" name="review" rows="4" cols="50"></textarea>
+                </div>
+                <button class="submitButton" onclick={submit()}>Connect</button>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
